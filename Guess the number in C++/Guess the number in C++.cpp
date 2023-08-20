@@ -30,7 +30,10 @@ int main()
             cout << endl << "You guessed correctly! The number is " << *picked << "!" << endl;
             correct = true;
         }
+
+        delete guessed;
     } while (!correct);
 
+    delete picked;
     cout << endl << "End of program." << endl;
 }
